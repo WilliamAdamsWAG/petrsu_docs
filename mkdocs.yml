@@ -12,11 +12,15 @@ extra:
 
 nav:
     - 'Главная': 'index.md'
+    - 'Лабораторные':
+        - '№1 Hello, Students!': 'labs/lab1.md'
+        - '№2 Нужный этаж': 'labs/lab2.md'
     - 'Linux':
         - 'Команды терминала': 'linux/bash.md'
-    - 'Лабораторные':
-        - 'Лабораторная 1': 'labs/lab1.md'
-        - 'Лабораторная 2': 'labs/lab2.md'
+    - 'Инструменты':
+        - 'make': 'tools/make.md'
+        - 'PuTTy': 'tools/putty.md'
+        - 'Termius': 'tools/termius.md'
 
 theme:
     name: material
@@ -42,6 +46,7 @@ theme:
 markdown_extensions:
 - attr_list
 - admonition
+- md_in_html
 
 - pymdownx.inlinehilite
 - pymdownx.snippets

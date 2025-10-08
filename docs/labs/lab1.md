@@ -1,4 +1,6 @@
-
+---
+comments: true
+---
 
 ## Вводная
 
@@ -65,18 +67,18 @@ clean:
 
 нам же нужно создать новую директорию `inf`, перейти в неё и в неё создать ещё 1 директорию, `task1`. для этого нужно использовать команды `mkdir` и `cd` (ну или просто в проводнике правой кнопкой мыши - создать)
 
-```
+```bash
 user@kappa~> mkdir inf
 ```
 тут мы создали директорию `inf`, теперь нужно в неё перейти:
 
-```
+```bash
 user@kappa~> cd inf
 ```
 
 теперь мы находимся в директории `inf`, по аналогии создаём директорию `task1` и переходим в неё:
 
-```
+```bash
 user@kappa~/inf> mkdir task1
 user@kappa~/inf> cd task1
 ```
@@ -85,7 +87,7 @@ user@kappa~/inf> cd task1
 
 После того как мы создали все нужные директории нам необходимо создать сами файлы программы, main.c и Makefie
 
-```
+```bash
 user@kappa~/inf/task1> touch main.c
 user@kappa~/inf/task1> touch Makefile
 ```
@@ -104,7 +106,7 @@ user@kappa~/inf/task1> touch Makefile
 
 Теперь можно приступать к самому написанию программы, начнём с `main.c`, чтобы начать работу нужно его открыть через `emacs`:
 
-```
+```bash
 user@kappa~/inf/task1> emacs main.c
 ```
 

@@ -1,11 +1,31 @@
 site_name: PetrSU
+repo_url: https://github.com/WilliamAdamsWAG/petrsu_labs
 theme:
   name: material
   language: ru
+  icon:
+    repo: fontawesome/brands/github
   features:
     - search.suggest
     - search.highlight
+    - navigation.top
+    - navigation.path
+    - navigation.instant
+    - navigation.instant.progress
+    - content.code.copy
+  custom_dir: overrides
+
+nav:
+  - 'Главаная': 'index.md'
+  - 'Linux':
+    - 'Команды терминала': 'linux/bash.md'
+  - 'Лабораторные':
+    - 'Лабораторная 1': 'labs/lab1.md'
 
 plugins:
   - search
   - tags
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences

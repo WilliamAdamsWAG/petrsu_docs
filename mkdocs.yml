@@ -21,7 +21,7 @@ nav:
         - '№6 Англо-русский словарь': 'labs/lab6.md'
         - '№7 Прототип компьютерной игры': 'labs/lab7.md'
     - 'Linux':
-        - 'Команды терминала': 'linux/bash.md'
+        - 'Команды терминала': 'Linux/bash.md'
     - 'Инструменты':
         - 'make': 'tools/make.md'
         - 'PuTTy': 'tools/putty.md'

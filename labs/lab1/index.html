@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#hello-students" class="md-skip">
           Перейти к содержанию
         </a>
       
@@ -290,6 +290,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -321,6 +323,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Содержание">
   
   
+  
+    
   
   
     <label class="md-nav__title" for="__toc">
@@ -430,6 +434,121 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    №3 Проблема 196
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    №4 Гипотеза Гольдбаха
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    №5 Калькулятор рациональных дробей
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    №6 Англо-русский словарь
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    №7 Прототип компьютерной игры
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -482,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../linux/bash/" class="md-nav__link">
+      <a href="../../Linux/bash/" class="md-nav__link">
         
   
   
@@ -636,6 +755,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -741,11 +862,10 @@
   
 
 
-  <h1>№1 Hello, Students!</h1>
-
+<h1 id="hello-students">Hello, Students</h1>
 <h2 id="_1">Вводная</h2>
 <p>Выполнять лабораторные работы нам предлагается на дистрибутиве Linux <code>OpenSUSE</code>, в ходе конкретно этой лабы нам нужно создать программу на С которая просто выведет текст <code>Hello, students!</code> в консоль.</p>
-<p>предостравленые фрагменты кода:</p>
+<p>предоставленные фрагменты кода:</p>
 <div class="language-C highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">main.c</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -806,7 +926,7 @@
 </span></code></pre></div></td></tr></table></div>
 <h2 id="_2">Этапы выполнения</h2>
 <h3 id="_3">Создание директории лабы</h3>
-<p>изначально мы имеем следующую структуру директорий:
+<p>изначально мы имеем следующую структуру директорий:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>└── 📁 user
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    ├── 📁 Видео
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    ├── 📁 Документы
@@ -817,11 +937,11 @@
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    ├── 📁 Рабочий стол
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    ├── 📁 Шаблоны
 </span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    └── 📁 bin
-</span></code></pre></div></p>
-<p>нам же нужно создать новую директорию <code>inf</code>, перейти в неё и в неё создать ещё 1 директорию, <code>task1</code>. для этого нужно использовать команды <code>mkdir</code> и <code>cd</code> (ну или просто в проводнике правой кнопкой мыши - создать)</p>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>user@kappa~&gt;<span class="w"> </span>mkdir<span class="w"> </span>inf
 </span></code></pre></div>
-тут мы создали директорию <code>inf</code>, теперь нужно в неё перейти:</p>
+<p>нам же нужно создать новую директорию <code>inf</code>, перейти в неё и в неё создать ещё 1 директорию, <code>task1</code>. для этого нужно использовать команды <code>mkdir</code> и <code>cd</code> (ну или просто в проводнике правой кнопкой мыши - создать)</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>user@kappa~&gt;<span class="w"> </span>mkdir<span class="w"> </span>inf
+</span></code></pre></div>
+<p>тут мы создали директорию <code>inf</code>, теперь нужно в неё перейти:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>user@kappa~&gt;<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>inf
 </span></code></pre></div>
 <p>теперь мы находимся в директории <code>inf</code>, по аналогии создаём директорию <code>task1</code> и переходим в неё:</p>
@@ -844,14 +964,14 @@
 <p>Теперь можно приступать к самому написанию программы, начнём с <code>main.c</code>, чтобы начать работу нужно его открыть через <code>emacs</code>:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>user@kappa~/inf/task1&gt;<span class="w"> </span>emacs<span class="w"> </span>main.c
 </span></code></pre></div>
-<p>после этого нужно написать код из вводной, но с некотрыми изменениями:</p>
+<p>после этого нужно написать код из вводной, но с некоторыми изменениями:</p>
 <ul>
 <li>строка 4: Заменить <code>First Last</code> на ваши имя и фамилию</li>
-<li>строка 4: Заменить в адресе эл.почты <code>student</code> на ваш логин от kappa </li>
+<li>строка 4: Заменить в адресе эл.почты <code>student</code> на ваш логин от kappa</li>
 </ul>
-<p>после того как вы измените и напишите всё нужное файл можно сохранять, чтобы это сделать нужно использовать сочетание клавишь <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>X</kbd></span>, после чего нажать <span class="keys"><kbd>S</kbd></span>. После этого emacs спросит нужно ли сохранять их, нажимаем <span class="keys"><kbd>Y</kbd></span> и готово. можно переходить в файл <code>Makefile</code>, для этого зажимаем <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>X</kbd></span> после чего <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>F</kbd></span>, вводим <code>Makefile</code>. После этого откроется наш Makefile, в него также нужно написать код из вводной</p>
+<p>после того как вы измените и напишите всё нужное файл можно сохранять, чтобы это сделать нужно использовать сочетание клавиш <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>X</kbd></span>, после чего нажать <span class="keys"><kbd>S</kbd></span>. После этого emacs спросит нужно ли сохранять их, нажимаем <span class="keys"><kbd>Y</kbd></span> и готово. можно переходить в файл <code>Makefile</code>, для этого зажимаем <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>X</kbd></span> после чего <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd>F</kbd></span>, вводим <code>Makefile</code>. После этого откроется наш Makefile, в него также нужно написать код из вводной</p>
 <h3 id="_5">Сборка программы и запуск</h3>
-<p>После того как все файлы созданы и код написан нужно скомпилировать прорамму и запустить её, для этого мы будем использовать <code>make</code>. вводим в консоль:</p>
+<p>После того как все файлы созданы и код написан нужно скомпилировать программу и запустить её, для этого мы будем использовать <code>make</code>. вводим в консоль:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>user@kappa~/inf/task1&gt;<span class="w"> </span>make
 </span></code></pre></div>
 <p>в директории программы появятся новые файлы:</p>
@@ -884,10 +1004,10 @@
 <span class="normal"><a href="#__codelineno-12-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="c"># цель по умолчанию (при вызове make или make task1)</span>
 </span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="c"># собираем программу task1 из объектного файла task1.o</span>
 </span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="nf">task1</span><span class="o">:</span><span class="w"> </span><span class="n">main</span>.<span class="n">o</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="w">    </span>gcc<span class="w"> </span>-g<span class="w"> </span>-O0<span class="w"> </span>-o<span class="w"> </span>task1<span class="w"> </span>main.o
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="w"> </span>gcc<span class="w"> </span>-g<span class="w"> </span>-O0<span class="w"> </span>-o<span class="w"> </span>task1<span class="w"> </span>main.o
 </span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5"></a>
 </span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="nf">main.o</span><span class="o">:</span><span class="w"> </span><span class="n">main</span>.<span class="n">c</span>
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="w">    </span>gcc<span class="w"> </span>-g<span class="w"> </span>-O0<span class="w"> </span>-c<span class="w"> </span>main.c
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="w"> </span>gcc<span class="w"> </span>-g<span class="w"> </span>-O0<span class="w"> </span>-c<span class="w"> </span>main.c
 </span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8"></a>
 </span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9"></a><span class="hll"><span class="nf">indent</span><span class="o">:</span>
 </span></span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10"></a><span class="hll"><span class="w">    </span>indent<span class="w"> </span>-kr<span class="w"> </span>-nut<span class="w"> </span>main.c
@@ -895,7 +1015,7 @@
 </span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12"></a><span class="c"># цель clean (при вызове make clean)</span>
 </span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13"></a><span class="c"># удаляем программу и объектные файлы</span>
 </span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14"></a><span class="nf">clean</span><span class="o">:</span>
-</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15"></a><span class="w">    </span>rm<span class="w"> </span>task1<span class="w"> </span>*.o
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15"></a><span class="w"> </span>rm<span class="w"> </span>task1<span class="w"> </span>*.o
 </span></code></pre></div></td></tr></table></div>
 <p>теперь если мы введём в консоль <code>make indent</code> то наш исходный код в <code>main.c</code> будет отформатирован под стиль <span class="keys"><kbd>K&amp;R</kbd></span></p>
 <h2 id="_6">Возможные вопросы</h2>

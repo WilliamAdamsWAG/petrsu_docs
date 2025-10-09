@@ -459,6 +459,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Возможные вопросы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сборка
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Работа программы
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -903,6 +927,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Возможные вопросы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сборка
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Работа программы
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -918,16 +966,6 @@
               <article class="md-content__inner md-typeset">
                 
                   
-
-  <nav class="md-tags" >
-    
-      
-      
-      
-        <span class="md-tag">indev</span>
-      
-    
-  </nav>
 
 
   
@@ -1210,13 +1248,43 @@
 </span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5"></a>main.c:13:5: error: C++ style comments are not allowed in ISO C90
 </span></code></pre></div></td></tr></table></div>
 <h2 id="_12">Возможные вопросы</h2>
-<div class="admonition question">
-<p class="admonition-title">Почему при делении мы всегда получаем целое число? Как нам получить десятичную дробь в ответе?</p>
+<h3 id="_13">Сборка</h3>
+<details class="question">
+<summary>Почему программа с Main() не работает? Почему обязательно нужно писать main() с маленькой буквы?</summary>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p>Когда операционная система запускает программу она передаёт управление именно функции <code>main</code>. Язык С регистрочувствительный, поэтому если мы пишем <code>Main</code>, то найти <code>main</code> не удаётся</p>
+</div>
+</details>
+<details class="question">
+<summary>Зачем мы добавляем флаги -Wall и -Wextra и что нам это даёт?</summary>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p>Без этих флагов компилятор будет давать нам информацию только об ошибках, которые мешают компиляции программы. <code>-Wall</code> Включает отображение базового набора предупреждений компилятора, а <code>-Wextra</code> расширяет набор предупреждений. Благодаря этому мы можем увидеть больше сомнительных частей кода и убрать больше багов</p>
+</div>
+</details>
+<details class="question">
+<summary>Зачем мы добавляем флаги -pedantic, -pedantic-errors и -ansi, что нам это даёт?</summary>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p><code>-pedantic</code> заставляет компилятор строго следовать стандарту языка С, а <code>-pedantic-errors</code> превращает каждое замечание от <code>-pedantic</code> в ошибку компиляции. <code>-ansi</code> задаёт стандарт, а именно стандарт 1989 года(С89)</p>
+</div>
+</details>
+<details class="question">
+<summary>Почему при смене стандарта -ansi на -std=c11 сообщение компилятора пропало?</summary>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p><code>-ansi</code> это стандарт 1989 года, в котором сказано, что комментарии в коде должны начинаться с <code>/*</code> и заканчиваться <code>*/</code>, применение комментариев вида <code>// ...</code> не прописано. Когда мы меняем <code>-ansi</code> на <code>-std=c11</code> мы меняем стандарт 1989 года на стандарт 2011 года, он более современный и он позволяет нам использовать однострочные комментарии <code>// ...</code></p>
+</div>
+</details>
+<h3 id="_14">Работа программы</h3>
+<details class="question">
+<summary>Почему при делении мы всегда получаем целое число? Как нам получить десятичную дробь в ответе?</summary>
 <div class="admonition success">
 <p class="admonition-title">Ответ</p>
 <p>Тип данных результата при делении определяется типами данных операндов, если у нас оба числа <code>int</code>, то и результат будет <code>int</code>, компилятор строго следует типизации и поэтому дробна часть отсекается. Если нам нужна дробная часть, то хотя бы 1 операнд должен быть либо <code>float</code>, либо <code>double</code></p>
 </div>
-</div>
+</details>
 
 
 

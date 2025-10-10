@@ -2,50 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://edu.william-adams.ru/</loc>
-         <lastmod>2025-10-09</lastmod>
+         <lastmod>2025-10-10</lastmod>
+    </url>
+    <url>
+         <loc>https://edu.william-adams.ru/Linux/bash/</loc>
+         <lastmod>2025-10-10</lastmod>
+    </url>
+    <url>
+         <loc>https://edu.william-adams.ru/common/mit/</loc>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://edu.william-adams.ru/labs/lab1/</loc>
-         <lastmod>2025-10-09</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://edu.william-adams.ru/labs/lab2/</loc>
-         <lastmod>2025-10-09</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://edu.william-adams.ru/labs/lab3/</loc>
-         <lastmod>2025-10-09</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://edu.william-adams.ru/labs/lab4/</loc>
-         <lastmod>2025-10-09</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://edu.william-adams.ru/labs/lab5/</loc>
-         <lastmod>2025-10-09</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://edu.william-adams.ru/labs/lab6/</loc>
-         <lastmod>2025-10-09</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://edu.william-adams.ru/labs/lab7/</loc>
-         <lastmod>2025-10-09</lastmod>
-    </url>
-    <url>
-         <loc>https://edu.william-adams.ru/linux/bash/</loc>
-         <lastmod>2025-10-09</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://edu.william-adams.ru/tools/make/</loc>
-         <lastmod>2025-10-09</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://edu.william-adams.ru/tools/putty/</loc>
-         <lastmod>2025-10-09</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
     <url>
          <loc>https://edu.william-adams.ru/tools/termius/</loc>
-         <lastmod>2025-10-09</lastmod>
+         <lastmod>2025-10-10</lastmod>
     </url>
 </urlset>

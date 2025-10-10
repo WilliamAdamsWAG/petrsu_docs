@@ -42,6 +42,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/bg.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -404,13 +406,22 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Перенос файлов на удалённый сервер
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       Возможные вопросы
     </span>
@@ -912,13 +923,22 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Перенос файлов на удалённый сервер
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       Возможные вопросы
     </span>
@@ -1160,7 +1180,80 @@
 </div>
 </div>
 </div>
-<h2 id="_6">Возможные вопросы</h2>
+<h3 id="_6">Перенос файлов на удалённый сервер</h3>
+<p>Если вы работаете на комах в кабинете информатики под своим логином и паролем то можно не париться, та все файлы автоматически синхронизируются. Что касается других случаев то есть несколько способов</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio"><input id="__tabbed_2_2" name="__tabbed_2" type="radio"><input id="__tabbed_2_3" name="__tabbed_2" type="radio"><div class="tabbed-labels"><label for="__tabbed_2_1">переписать</label><label for="__tabbed_2_2">scp</label><label for="__tabbed_2_3">Termius</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Самый простой в реализации метод, но в то же время и самый долгий. Для этого вам нужно подключиться по ssh к kappa, после чего создать там файлы и переписывать в консоли через emacs или другой редактор, например Vim</p>
+</div>
+<div class="tabbed-block">
+<p>Перекинуть файл можно через команду терминала <code>scp</code>, её синтаксис выглядит следующим образом:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>scp<span class="w"> </span>путь_до_нужного_файла<span class="w"> </span>логин@kappa.cs.petrsu.ru:/путь_куда_сохранять
+</span></code></pre></div>
+<p>для того чтобы перекинуть файл <code>main.c</code> в директорию нашей лабы нужно выполнить следующее:</p>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>scp<span class="w"> </span>main.c<span class="w"> </span>логин@kappa.cs.petrsu.ru:/home/01/user/inf/task1
+</span></code></pre></div>
+<p>После выполнения данной команды файл будет отправлен по указанному пути</p>
+<div class="admonition warning">
+<p class="admonition-title">Важно</p>
+<p>путь куда сохранять может отличаться в зависимости от пользователя. По дефолту вы находитесь в /home/01/логин, но это может отличаться. Чтобы избежать ошибок с этим следует подключиться к kappa по ssh и ввести команду <code>pwd</code>, она покажет текущую директорию, при подключении мы находимся в домашней, так что это то, что нужно</p>
+</div>
+</div>
+<div class="tabbed-block">
+<p>Это пожалуй самый простой и быстрый способ, когда вы на своём компе всё написали, нужно зайти в Termius и перейти на вкладку <code>SFTP</code>, и там нажать справа <code>Select host</code>. </p>
+<p></p><figure markdown="span">
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/assets/termius-2.png" data-desc-position="bottom"><img alt="Image title" src="/assets/termius-2.png" width="100%"></a>
+    <figcaption>Подключение по SFTP</figcaption>
+</figure><p></p>
+<p>Выбираем созданное раннее подключение, после чего как в обычном проводнике переходим в нужную директорию на сервере, левая половина это наши локальные файлы, ищем папку в которой вы всё делали, и после этого просто перетаскиваем файлы с левой половины на правую</p>
+</div>
+</div>
+</div>
+<h2 id="_7">Возможные вопросы</h2>
+<details class="question">
+<summary>Что такое gcc?</summary>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p>GCC это компилятор, с помощью которого мы из файлов с исходным кодом, который понятен человеку, сделать машинный код, который понятен компьютеру</p>
+</div>
+</details>
+<details class="question">
+<summary>что значат параметры которые мы передаём gcc?</summary>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p>Флаг <span class="keys"><kbd>-g</kbd></span> включает добавление отладочной информации в готовую программу, как если бы мы упаковывали какой то товар и клали туда инструкцию. Флаг <span class="keys"><kbd>-O0</kbd></span> отключает оптимизацию от компилятора. Флаг <span class="keys"><kbd>-c</kbd></span> компилирует .с файл в объектный файл. Флаг <span class="keys"><kbd>-о</kbd></span> задаёт имя файла программы который мы получаем на выходе</p>
+</div>
+</details>
+<details class="question">
+<summary>Что такое make?</summary>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p>make это утилита автоматизации процесса сборки программы из исходного кода. Вместо того, что бы вводить кучу раз ряд команд, мы можем добавить цель, зависимость для неё, и сказать что нужно сделать</p>
+</div>
+</details>
+<details class="question">
+<summary>Что значат параметры которые мы передаём make indent?</summary>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<div class="annotate" markdown>
+<ul>
+<li>Флаг <span class="keys"><kbd>-kr</kbd></span>: задаёт стандарт оформления K&amp;R (1)</li>
+<li>Флаг <span class="keys"><kbd>-nut</kbd></span>: включает проверку правильности пробелов и табуляций</li>
+</ul>
+</div>
+<ol>
+<li>Керниган и риччи</li>
+</ol>
+</div>
+</details>
+<details class="question">
+<summary>что значит строка '#include &lt; stdio.h&gt;'?</summary>
+<div class="admonition success">
+<p class="admonition-title">Ответ</p>
+<p>Директива препроцессора <code>#include</code> говорит компилятору, что до этапа компиляции нам нужно вставить в это место содержимое некого заголовочного файла. <code>&lt;stdio.h&gt;</code> указывает на необходимый заголовочный файл, и т.к. это часть стандартной библиотеки С то название пишем в &lt; &gt;. <code>stdio.h</code> даёт нам доступ к стандартному вводу/выводу</p>
+</div>
+</details>
 
 
 
